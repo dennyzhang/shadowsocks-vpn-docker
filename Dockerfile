@@ -1,9 +1,9 @@
 ########## How To Use Docker Image ###############
 ##
-##  Image Name: denny/ss:v2
+##  Image Name: denny/shadowsocks-vpn-docker:latest
 ##  Install docker utility
-##  Download docker image: docker pull denny/ss:v2
-##  Build Image From Dockerfile. docker build -f ss_v2.dockerfile -t denny/ss:v2 --rm=true .
+##  Download docker image: docker pull denny/shadowsocks-vpn-docker:latest
+##  Build Image From Dockerfile. docker build  -t denny/shadowsocks-vpn-docker:latest --rm=true .
 ##
 ##  Image link: https://github.com/DennyZhang/devops_docker_image/blob/tag_v6/shadowsock
 ##  Read more: https://www.dennyzhang.com/free_vpn
@@ -17,7 +17,7 @@
 ##################################################
 
 FROM ubuntu:14.04
-MAINTAINER DennyZhang.com <http://dennyzhang.com>
+MAINTAINER DennyZhang.com <https://dennyzhang.com>
 
 ARG VPN_PASSWORD="DamnGFW1234"
 ARG SERVER_PORT="6187"

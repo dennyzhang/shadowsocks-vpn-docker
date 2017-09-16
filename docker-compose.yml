@@ -3,7 +3,7 @@ services:
   shadowsock:
     container_name: shadowsock
     hostname: shadowsock
-    image: denny/ss:v2
+    image: denny/shadowsocks-vpn-docker:latest
     ports:
       - "6187:6187"
     restart: always
