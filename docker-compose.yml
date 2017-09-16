@@ -1,0 +1,16 @@
+version: '2'
+services:
+  shadowsock:
+    container_name: shadowsock
+    hostname: shadowsock
+    image: denny/ss:v2
+    ports:
+      - "6187:6187"
+    restart: always
+    volumes:
+      - $PWD/shadowsocks.json:/etc/shadowsocks.json:rw
+    networks:
+      - network_vpn
+
+networks:
+  network_vpn:
