@@ -22,6 +22,7 @@ MAINTAINER DennyZhang.com <https://dennyzhang.com>
 ARG VPN_PASSWORD="DamnGFW1234"
 ARG SERVER_PORT="6187"
 
+ADD shadowsocks.json /etc/shadowsocks.json
 ########################################################################################
 RUN apt-get -y update && \
     apt-get install -y lsof wget telnet && \
@@ -29,8 +30,6 @@ RUN apt-get -y update && \
     pip install shadowsocks && \
 
 # Configure shadowsock password
-   wget -O /etc/shadowsocks.json \
-        https://raw.githubusercontent.com/DennyZhang/devops_docker_image/tag_v6/shadowsock/resource/shadowsocks.json && \
    sed -i "s/DamnGFW/${VPN_PASSWORD}/g" /etc/shadowsocks.json && \
    sed -i "s/6188/${SERVER_PORT}/g" /etc/shadowsocks.json && \
 
