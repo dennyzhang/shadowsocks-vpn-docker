@@ -9,13 +9,13 @@
 ## Description :
 ## --
 ## Created : <2017-10-15>
-## Updated: Time-stamp: <2017-10-15 15:49:08>
+## Updated: Time-stamp: <2017-10-15 16:25:09>
 ##-------------------------------------------------------------------
 set -e
 
 # Configure shadowsock password
 sed -i "s/DamnGFW/${VPN_PASSWORD}/g" /etc/shadowsocks.json
 sed -i "s/6187/${SERVER_PORT}/g" /etc/shadowsocks.json
-    
+
 ssserver -c /etc/shadowsocks.json
 ## File: hello ends
