@@ -19,26 +19,25 @@
 FROM ubuntu:14.04
 MAINTAINER DennyZhang.com <https://dennyzhang.com>
 
-ARG VPN_PASSWORD="DamnGFW1234"
-ARG SERVER_PORT="6187"
+ENV VPN_PASSWORD "DamnGFW"
+ENV SERVER_PORT "6188"
 
-ADD shadowsocks.json /etc/shadowsocks.json
+COPY shadowsocks.json /etc/shadowsocks.json
+COPY docker-entrypoint.sh /root/docker-entrypoint.sh
+
 ########################################################################################
 RUN apt-get -y update && \
     apt-get install -y lsof wget telnet && \
     apt-get install -y python-pip python-m2crypto lsof && \
     pip install shadowsocks && \
-
-# Configure shadowsock password
-   sed -i "s/DamnGFW/${VPN_PASSWORD}/g" /etc/shadowsocks.json && \
-   sed -i "s/6188/${SERVER_PORT}/g" /etc/shadowsocks.json && \
+    chmod o+x /root/docker-entrypoint.sh && \
 
 # clean up, to make image smaller
    rm -rf /var/cache/* && \
    rm -rf /tmp/* /var/tmp/* && \
    rm -rf /usr/share/doc
 
-CMD ["ssserver", "-c", "/etc/shadowsocks.json"]
+ENTRYPOINT /root/docker-entrypoint.sh
 
 HEALTHCHECK --interval=2m --timeout=3s \
             CMD lsof -i tcp:6187 | grep LISTEN || exit 1
