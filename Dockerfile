@@ -20,7 +20,7 @@ FROM ubuntu:14.04
 MAINTAINER DennyZhang.com <https://dennyzhang.com>
 
 ENV VPN_PASSWORD "DamnGFW"
-ENV SERVER_PORT "6188"
+ENV SERVER_PORT "6187"
 
 COPY shadowsocks.json /etc/shadowsocks.json
 COPY docker-entrypoint.sh /root/docker-entrypoint.sh
