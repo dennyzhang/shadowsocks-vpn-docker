@@ -24,13 +24,14 @@ ENV SERVER_PORT "6188"
 
 COPY shadowsocks.json /etc/shadowsocks.json
 COPY docker-entrypoint.sh /root/docker-entrypoint.sh
+COPY docker-healthcheck.sh /root/docker-healthcheck.sh
 
 ########################################################################################
 RUN apt-get -y update && \
     apt-get install -y lsof wget telnet && \
     apt-get install -y python-pip python-m2crypto lsof && \
     pip install shadowsocks && \
-    chmod o+x /root/docker-entrypoint.sh && \
+    chmod o+x /root/*.sh && \
 
 # clean up, to make image smaller
    rm -rf /var/cache/* && \
@@ -40,5 +41,5 @@ RUN apt-get -y update && \
 ENTRYPOINT /root/docker-entrypoint.sh
 
 HEALTHCHECK --interval=2m --timeout=3s \
-            CMD lsof -i tcp:6187 | grep LISTEN || exit 1
+            CMD $HOME/docker-healthcheck.sh || exit 1
 ########################################################################################
