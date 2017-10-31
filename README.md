@@ -22,7 +22,7 @@ docker-compose up -d
  Password: DamnGFW
 ```
 
-Default configuration is [shadowsocks.json](./shadowsocks.json)
+Default configuration is in [shadowsocks.json](./shadowsocks.json)
 
 Screenshot:
 
