@@ -28,6 +28,8 @@ Screenshot:
 
 ![](images/ss_config.png)
 
+![](images/ss_activate_server.jpg)
+
 - [![Docker](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/docker.png)](https://hub.docker.com/r/denny/shadowsocks-vpn-docker/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 - File me [tickets](https://github.com/DennyZhang/shadowsocks-vpn-docker/issues) or star [the repo](https://github.com/DennyZhang/shadowsocks-vpn-docker).
