@@ -1,7 +1,19 @@
 # Basic Intro
 <a href="https://github.com/DennyZhang?tab=followers"><img align="right" width="200" height="183" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/fork_github.png" /></a>
 
-Docker shadowsocks VPN
+Docker shadowsocks VPN via docker
+
+Shadowsocks: https://shadowsocks.org/en/index.html
+
+```
+git clone https://github.com/DennyZhang/shadowsocks-vpn-docker.git
+cd shadowsocks-vpn-docker
+docker-compose up -d
+```
+
+Connect to your VPN server from client machines
+
+$public_ip:6187
 
 - [![LinkedIn](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/linkedin.png)](https://www.linkedin.com/in/dennyzhang001) [![Github](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/github.png)](https://github.com/DennyZhang) [![Twitter](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/twitter.png)](https://twitter.com/dennyzhang001) [![Slack](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/slack.png)](https://goo.gl/ozDDyL)
 
