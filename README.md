@@ -5,6 +5,10 @@ Docker shadowsocks VPN via docker
 
 Shadowsocks: https://shadowsocks.org/en/index.html
 
+Read above link to understand Shadowsocks VPN service.
+
+- Deploy Shadowsocks server in your VM via docker-compose.
+
 ```
 git clone https://github.com/DennyZhang/shadowsocks-vpn-docker.git
 cd shadowsocks-vpn-docker
@@ -20,6 +24,9 @@ Connect to your VPN server from client machines
 ```
 
 Default configuration is [shadowsocks.json](./shadowsocks.json)
+
+Screenshot
+![](images/ss_config.png)
 
 - [![LinkedIn](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/linkedin.png)](https://www.linkedin.com/in/dennyzhang001) [![Github](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/github.png)](https://github.com/DennyZhang) [![Twitter](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/twitter.png)](https://twitter.com/dennyzhang001) [![Slack](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/slack.png)](https://goo.gl/ozDDyL)
 
