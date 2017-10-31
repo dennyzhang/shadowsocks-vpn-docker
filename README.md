@@ -13,7 +13,13 @@ docker-compose up -d
 
 Connect to your VPN server from client machines
 
-$public_ip:6187
+```
+ Server: $YOUR_SERVER_IP
+ Port: 6187
+ Password: DamnGFW
+```
+
+Default configuration is [shadowsocks.json](./shadowsocks.json)
 
 - [![LinkedIn](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/linkedin.png)](https://www.linkedin.com/in/dennyzhang001) [![Github](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/github.png)](https://github.com/DennyZhang) [![Twitter](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/twitter.png)](https://twitter.com/dennyzhang001) [![Slack](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/slack.png)](https://goo.gl/ozDDyL)
 
