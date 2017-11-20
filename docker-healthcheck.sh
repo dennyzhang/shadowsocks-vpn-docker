@@ -5,11 +5,11 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: docker-healthcheck.sh
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <https://www.dennyzhang.com/contact>
 ## Description :
 ## --
 ## Created : <2017-10-15>
-## Updated: Time-stamp: <2017-10-15 16:26:01>
+## Updated: Time-stamp: <2017-11-13 11:01:13>
 ##-------------------------------------------------------------------
 set -e
 

@@ -5,11 +5,11 @@
 ##   https://www.dennyzhang.com/wp-content/mit_license.txt
 ##
 ## File: hello
-## Author : Denny <contact@dennyzhang.com>
+## Author : Denny <https://www.dennyzhang.com/contact>
 ## Description :
 ## --
 ## Created : <2017-10-15>
-## Updated: Time-stamp: <2017-10-15 16:25:09>
+## Updated: Time-stamp: <2017-11-13 11:01:15>
 ##-------------------------------------------------------------------
 set -e
 
