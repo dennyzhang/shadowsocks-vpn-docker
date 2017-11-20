@@ -26,8 +26,8 @@ Default configuration is in [shadowsocks.json](./shadowsocks.json)
 
 Screenshot:
 
-<a href="https://www.dennyzhang.com"><img src="https://raw.githubusercontent.com/DennyZhang/shadowsocks-vpn-docker/master/misc/ss_config.png"/> </a>
-<a href="https://www.dennyzhang.com"><img src="https://raw.githubusercontent.com/DennyZhang/shadowsocks-vpn-docker/master/misc/ss_activate_server.jpg"/> </a>
+<a href="https://www.dennyzhang.com"><img src="https://raw.githubusercontent.com/DennyZhang/shadowsocks-vpn-docker/master/images/ss_config.png"/> </a>
+<a href="https://www.dennyzhang.com"><img src="https://raw.githubusercontent.com/DennyZhang/shadowsocks-vpn-docker/master/images/ss_activate_server.jpg"/> </a>
 
 - [![Docker](https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/docker.png)](https://hub.docker.com/r/denny/shadowsocks-vpn-docker/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
